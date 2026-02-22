@@ -1,6 +1,6 @@
 # x96-combiner
-A tool to merge x86 and x64 shellcode to one that can run on x86/x64 at the same time.\
-This technique is referenced from DoublePulsar, it added some obfuscation instructions to circumvent the feature.
+A tool for building multi-architecture (x86/x64) shellcode that can execute correctly on both platforms.\
+The implementation is inspired by techniques observed in DoublePulsar.
 ## Usage
 ```bash
 x96-combiner -x86 x86.bin -x64 x64.bin -o x96.bin
