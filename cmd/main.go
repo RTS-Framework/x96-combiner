@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/RSSU-Shellcode/x96-combiner"
+	"github.com/RTS-Framework/x96-combiner"
 )
 
 var (
