@@ -56,7 +56,7 @@ func genGarbageInst() []byte {
 	garbage := make([]byte, 0, 64)
 	offset := 4 + randIntN(60)
 	// jmp [4-64]
-	garbage = append(garbage, 0xEB, byte(offset))
+	garbage = append(garbage, 0xEB, byte(offset)) // #nosec
 	// padding garbage data
 	inst := randBytes(offset)
 	garbage = append(garbage, inst...)
