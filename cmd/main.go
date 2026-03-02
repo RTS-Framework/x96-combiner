@@ -58,7 +58,7 @@ func main() {
 	if oh {
 		shellcode = []byte(hex.EncodeToString(shellcode))
 	}
-	err = os.WriteFile(out, shellcode, 0600)
+	err = os.WriteFile(out, shellcode, 0600) // #nosec
 	checkError(err)
 }
 
